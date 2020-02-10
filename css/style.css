@@ -1,0 +1,171 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: lightyellow;
+}
+
+#container {
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 0 0 4px darkred;
+}
+
+header {
+	color: white;
+	margin: 0;
+	padding: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+header h2 {
+	font-size: 300%;
+	font-family: 'Righteous', cursive;
+	letter-spacing: 0.4rem;
+}
+
+.headerArea p {
+	margin-top: 4rem;
+	margin-right: 4rem;
+	margin-left: 2rem;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+nav, footer {
+	background-color: orange;
+	margin: 0;
+	padding: 1rem;
+}
+
+nav ul li, footer ul li {
+	display: inline;
+}
+
+nav ul li a, footer ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	padding: 1rem;
+}
+
+footer {
+	text-align: center;
+}
+
+.mainSlogan, .featuredTitle {
+	text-align: center;
+}
+
+#productArea {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 2rem 0 2rem 0;
+}
+
+.itemCard {
+	width: 14rem;
+	height: 26rem;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 1rem;
+	color: white;
+	margin: 0.4rem;
+}
+
+.itemCard img {
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.itemCard .price {
+	font-size: 120%;
+	background-color: rgb(0,0,0,0.5);
+	padding: 1rem;
+	border-radius: 1rem;
+	font-weight: bold;
+}
+
+.legend {
+	display: flex;
+	justify-content: space-around;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.low {
+	background-color: orange;
+}
+
+.soldOut {
+	background-color: darkred;
+}
+
+.stocked {
+	background-color: lightseagreen;
+}
+
+.square {
+	width: 8rem;
+	height: 3rem;
+	text-align: center;
+	padding-top: 1.5rem;
+	color: white;
+	margin: 1rem;
+	border-radius: 1rem;
+}
+
+@media only screen and (max-width: 920px) {
+
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.headerArea p, .headerArea h2 {
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav {
+		text-align: center;
+	}
+
+}
+@media only screen and (max-width: 640px) {
+
+	body {
+		padding: 0;
+		margin: 0;
+	}
+
+	#container {
+		width: 100%;
+		margin: 0;
+		box-shadow: none;
+	}
+
+	nav {
+		text-align: center;
+	}
+
+	.itemCard {
+		width: 20rem;
+		height: 32rem;
+	}
+
+	.legend {
+		width: 90%;
+	}
+
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.headerArea p, .headerArea h2 {
+		margin: 0;
+		padding: 0;
+	}
+}
