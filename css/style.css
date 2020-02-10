@@ -13,21 +13,29 @@ body {
 header {
 	color: white;
 	margin: 0;
-	padding: 2rem;
+	padding: 1rem;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 header h2 {
-	font-size: 300%;
+	font-size: 255%;
 	font-family: 'Righteous', cursive;
 	letter-spacing: 0.4rem;
+	line-height: 10%;
+}
+
+header img {
+	margin-top: 0.8rem;
+	width: 20%;
+}
+
+.headerArea {
+	width: 45%;
 }
 
 .headerArea p {
-	margin-top: 4rem;
-	margin-right: 4rem;
-	margin-left: 2rem;
 	font-weight: bold;
 	font-size: 120%;
 }
