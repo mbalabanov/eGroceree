@@ -23,7 +23,7 @@ header h2 {
 	font-size: 255%;
 	font-family: 'Righteous', cursive;
 	letter-spacing: 0.4rem;
-	line-height: 10%;
+	line-height: 20%;
 }
 
 header img {
@@ -32,7 +32,8 @@ header img {
 }
 
 .headerArea {
-	width: 45%;
+	width: 50%;
+	text-align: center;
 }
 
 .headerArea p {
@@ -131,6 +132,15 @@ footer {
 		text-align: center;
 	}
 
+	header h2 {
+		line-height: 100%;
+	}
+
+
+	.headerArea {
+		width: 100%;
+	}
+	
 	.headerArea p, .headerArea h2 {
 		margin: 0;
 		padding: 0;
